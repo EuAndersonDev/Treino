@@ -1,0 +1,21 @@
+
+
+#include <algorithm>
+#include <vector>
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v;
+    cin >> v;
+    vector<int> a = {100, 50, 25, 10, 5, 1};
+    int resultado =0;
+    for(int m:a){
+        while(v >=m){
+            v-=m;
+            resultado++;
+        };
+    };
+    cout << resultado << endl;
+    return 0;
+}
